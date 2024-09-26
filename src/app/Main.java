@@ -2,11 +2,16 @@ package app;
 
 import models.*;
 
-
-
-
+/*
+ * Essa é a classe principal que instancia os objetos mencionados
+ * nas classes em "models".
+ * 
+ * @author taynara
+ * version 1.0
+ */
 public class Main {
 	
+	//Colocando valores direto no método
 	static int fatoracao(int n){
 		int a = 1;
 		for(int i= 1;i<=n;i++) {

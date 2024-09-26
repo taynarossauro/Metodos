@@ -1,8 +1,10 @@
 package models;
 
-/* essa classe calcula a média artmetica 
+/* Essa classe calcula a média artmetica 
  * baseado nos 3 numeros que ela receber. 
  * 
+ * @author taynara
+ * @version 1.0
  */
 public class Aritmetica {
 	
@@ -16,12 +18,14 @@ public class Aritmetica {
 		this.c = c;
 	}
 	
+	//Método que retorna as informações e valores.
 	public String getNum() {
 		return
 			"Os números base são: " + a + ", " + b + ", " + c +
 			"\nA média aritmética desses números é: " + mediaAritmetica();
 	}
 	
+	//Método que efetua cálculo de média
 	public double mediaAritmetica() {
 		return
 		a + b/c;

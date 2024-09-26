@@ -1,17 +1,23 @@
-//Escreva uma função que retorna o fatorial de número informado por parâmetro
 
 
 package models;
 
+/* Essa função retorna o fatorial de número informado por parâmetro.
+ * 
+ * @author taynara
+ * @version 1.0
+ */
+
 public class Fatorial {
-	//declarando variavel
+	//Declarando variavel
 	private int n;
 	
-	//criando construtor
+	//Construtor da classe
 	public Fatorial(int n){
 		this.n = n;
 	}
 	
+	//Método que fatora por meio de um for.
 	public int fatoracao(){
 		int a = 1;
 		for(int i= 1;i>=n;i++) {
@@ -20,7 +26,7 @@ public class Fatorial {
 		return a;
 	}
 	
-	//getter
+	// Getter para obter os valores.
 	public String getValues() {
 		return
 			"Número usado como base: " + n +

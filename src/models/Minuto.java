@@ -1,18 +1,20 @@
-//Escreva um método que recebe uma quantidade de minutos e retorna o equivalente em horas e minutos.
-//Por exemplo: 90 min = 1 hora e 30 minutos
-
 package models;
 
+/* Classe que recebe uma quantidade de minutos e retorna o equivalente em horas e minutos.
+ * 
+ * @author taynara
+ * @version 1.0
+ */
 public class Minuto {
-	//declarando atributos
+	//Declarar atributos
 	private int min;
 	
-	//criando construtor
+	//Construtor da classe
 	public Minuto(int min){
 		this.min = min;
 	}
 		
-	//tras os valores
+	// Getter que printa as informações/resultados
 	public String getValue() {
 		if(getHour() != 0) {
 			return
@@ -24,7 +26,7 @@ public class Minuto {
 		}
 	}
 	
-	//funcao que converte de minutos para horas.
+	//Método que converte de minutos para horas.
 	public int getHour() {
 		return
 			min/60;
@@ -33,7 +35,5 @@ public class Minuto {
 		return
 			min%60;
 	}
-	
-	
 
 }
